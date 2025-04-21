@@ -2,130 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>SaumyaLabs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SaumyaLabs - Build with Style</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #000000, #0f0f0f);
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    .neon-text {
+      color: #00ff99;
+      text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99;
+    }
+    .btn-neon {
+      border: 2px solid #00ff99;
+      color: #00ff99;
+      background: transparent;
+    }
+    .btn-neon:hover {
+      background: #00ff99;
+      color: #000;
+      box-shadow: 0 0 10px #00ff99;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .card {
+      background-color: #111;
+      border: 1px solid #00ff99;
+      color: #00ff99;
+    }
+    footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #00ff99;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-success">
     <div class="container">
       <a class="navbar-brand neon-text" href="#">SaumyaLabs</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link neon-text" href="#hero">Home</a></li>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link neon-text" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link neon-text" href="#features">Features</a></li>
-          <li class="nav-item"><a class="nav-link neon-text" href="#components">Components</a></li>
           <li class="nav-item"><a class="nav-link neon-text" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero text-center text-light py-5">
+  <!-- Hero -->
+  <section id="home" class="section text-center">
     <div class="container">
       <h1 class="display-4 neon-text">Welcome to SaumyaLabs</h1>
-      <p class="lead">Your hub for Free & Premium UI Components, Libraries, and Assets</p>
-      <a href="#components" class="btn neon-btn btn-lg mt-3">Explore Components</a>
+      <p>Your source for Free & Premium Components, Libraries, and Assets</p>
+      <a href="#features" class="btn btn-neon mt-3">Explore Now</a>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section id="features" class="py-5">
-    <div class="container text-center text-light">
-      <h2 class="neon-text mb-4">Why SaumyaLabs?</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="glass-card p-3">
-            <h4 class="neon-text">Modern UI</h4>
-            <p>Beautiful components and templates built with latest trends in mind.</p>
+  <!-- Features -->
+  <section id="features" class="section text-center">
+    <div class="container">
+      <h2 class="neon-text mb-4">Features</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card p-3">
+            <h5>Free Resources</h5>
+            <p>Get high-quality UI components and assets for free.</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="glass-card p-3">
-            <h4 class="neon-text">Free & Premium</h4>
-            <p>Access both free and paid resources curated for developers and designers.</p>
+        <div class="col-md-4 mb-3">
+          <div class="card p-3">
+            <h5>Premium Tools</h5>
+            <p>Unlock advanced tools with premium access.</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="glass-card p-3">
-            <h4 class="neon-text">Easy to Integrate</h4>
-            <p>Plug-and-play assets that you can easily use in your own projects.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Components Section -->
-  <section id="components" class="container py-5">
-    <div class="text-center mb-5">
-      <h2 class="neon-text">Our Collections</h2>
-      <p class="text-light">Download Free or Buy Premium UI Tools</p>
-    </div>
-
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="card glass-card text-light">
-          <div class="card-body">
-            <h5 class="card-title">Free Button Pack</h5>
-            <p class="card-text">10+ modern buttons with hover animations</p>
-            <a href="#" class="btn neon-btn">Download</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card glass-card text-light">
-          <div class="card-body">
-            <h5 class="card-title">Premium UI Kit</h5>
-            <p class="card-text">Complete UI pack with forms, navs & cards</p>
-            <a href="#" class="btn neon-btn">Buy Now - $9</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card glass-card text-light">
-          <div class="card-body">
-            <h5 class="card-title">Free Icon Set</h5>
-            <p class="card-text">100+ SVG icons for UI & UX</p>
-            <a href="#" class="btn neon-btn">Download</a>
+        <div class="col-md-4 mb-3">
+          <div class="card p-3">
+            <h5>Easy Integration</h5>
+            <p>Plug-and-play tools ready for your projects.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container text-light">
-      <h2 class="text-center neon-text mb-4">Contact Us</h2>
-      <form class="glass-card p-4 mx-auto" style="max-width: 600px;">
+  <!-- Contact -->
+  <section id="contact" class="section text-center">
+    <div class="container">
+      <h2 class="neon-text mb-4">Contact Us</h2>
+      <form class="mx-auto" style="max-width: 500px;">
         <div class="mb-3">
-          <label for="name" class="form-label neon-text">Your Name</label>
-          <input type="text" class="form-control bg-dark text-light" id="name" placeholder="John Doe">
+          <input type="text" class="form-control bg-dark text-light" placeholder="Your Name">
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label neon-text">Email address</label>
-          <input type="email" class="form-control bg-dark text-light" id="email" placeholder="you@example.com">
+          <input type="email" class="form-control bg-dark text-light" placeholder="Your Email">
         </div>
         <div class="mb-3">
-          <label for="message" class="form-label neon-text">Message</label>
-          <textarea class="form-control bg-dark text-light" id="message" rows="4" placeholder="How can we help you?"></textarea>
+          <textarea class="form-control bg-dark text-light" rows="4" placeholder="Your Message"></textarea>
         </div>
-        <button type="submit" class="btn neon-btn w-100">Send Message</button>
+        <button type="submit" class="btn btn-neon">Send Message</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-4 text-light border-top border-secondary mt-5">
-    <p>© 2025 <span class="neon-text">SaumyaLabs</span>. Built with 💚 & passion.</p>
+  <footer>
+    <p class="neon-text">© 2025 SaumyaLabs | Designed with 💚</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
